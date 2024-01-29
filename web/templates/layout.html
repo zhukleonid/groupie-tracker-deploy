@@ -1,0 +1,33 @@
+{{ define "layout" }}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUPIE-TRACKER</title>
+    <link rel="stylesheet" href="/web/static/styles.css">
+  </head>
+  <body>
+    <div id="holder">
+      <header class="header">
+        <a class="header__brand" href="/" title="Home">
+          <h1>GROUPIE-TRACKER</h1>
+        </a>
+      </header>
+      <div id="body">
+        {{ template "content" . }}
+      </div>
+      <footer class="footer">
+          <div class="container">
+            <h3 class="footer__title">Follow us on Gitea.com:</h3>
+            <a class="footer__link" href="https://01.alem.school/git/lzhuk" target="_blank">lzhuk</a>
+            <a class="footer__link" href="https://01.alem.school/git/tsvetash" target="_blank">tsvetash</a>
+          </div>
+        </footer>
+    </div>
+    </body>
+  </html>
+
+  {{ end }}

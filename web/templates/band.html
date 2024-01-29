@@ -1,0 +1,19 @@
+{{ define "content" }}
+<div id="group">
+  <h4>
+    <img src="{{.Image}}" alt="{{.Name}} Image" style="width: 200px; height: 200px;">
+    {{.Name}}
+  </h4>
+</div>
+<div id="groupInfo">
+  <p>Members:</p>
+    <ul>
+      {{range .Members}}
+      <li>
+        {{.}}
+      </li>
+      {{end}}
+    </ul>
+  <p id="date">Creation Date: {{.CreationDate}}</p>
+</div>
+{{ end }}

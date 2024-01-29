@@ -1,0 +1,16 @@
+{{ define "content" }}
+
+    {{if .}}
+    <ul id="bandlist">
+      {{range .}}
+          <li id="band">
+              <a href="/band?id={{.ID}}">
+                  <img src="{{.Image}}" alt="{{.Name}} Image">
+                  {{.Name}} 
+              </a>
+          </li>
+      {{end}}
+    </ul>
+    {{end}}
+
+{{ end }}
