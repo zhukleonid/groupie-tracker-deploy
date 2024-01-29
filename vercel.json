@@ -1,8 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "deploy" }
+    {
+      "src": "main.go",
+      "use": "@vercel/go" 
+    }
   ]
 }
-
-  
